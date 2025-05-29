@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MappingSpecification:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/MappingSpecification_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="MappingSpecification/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MappingSpecification" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.17.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.17.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.17.1" />
+          <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:6.1.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
