@@ -4,13 +4,11 @@
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web/web/web/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web/web/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/WEB-INF/web.xml" />
-          <deploymentDescriptor name="context.xml" url="file://$MODULE_DIR$/App1/web/web/web/META-INF/context.xml" />
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/App1/web" relative="/" />
@@ -30,17 +28,11 @@
         <webroots>
           <root url="file://$MODULE_DIR$/App1/web/web" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/App1/src/main/java" />
-          <root url="file://$MODULE_DIR$/App1/src/main/resources" />
-          <root url="file://$MODULE_DIR$/App1/target/generated-sources/annotations" />
-        </sourceRoots>
       </configuration>
     </facet>
     <facet type="web" name="Web2">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/web2/WEB-INF/web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/App1/web/WEB-INF/web.xml" />
         </descriptors>
         <webroots>

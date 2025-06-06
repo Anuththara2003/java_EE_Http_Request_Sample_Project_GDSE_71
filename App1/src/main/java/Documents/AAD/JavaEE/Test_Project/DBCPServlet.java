@@ -33,29 +33,29 @@ public class DBCPServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        try {
-            Connection connection = dataSource.getConnection();
-            ResultSet resultSet = connection.prepareStatement("SELECT * FROM eventTable").executeQuery();
-            List<Map<String, String>> elist = new ArrayList<>();
-
-            while (resultSet.next()) {
-                Map<String, String> event = new HashMap<>();
-                event.put("eid", resultSet.getString("id")); // frontend uses eid, but actual column is id
-                event.put("ename", resultSet.getString("name"));
-                event.put("edescription", resultSet.getString("description"));
-                event.put("edate", resultSet.getString("date"));
-                event.put("eplace", resultSet.getString("place"));
-                elist.add(event);
-            }
-
-            resp.setContentType("application/json");
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.writeValue(resp.getWriter(), elist);
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+//
+//        try {
+//            Connection connection = dataSource.getConnection();
+//            ResultSet resultSet = connection.prepareStatement("SELECT * FROM eventTable").executeQuery();
+//            List<Map<String, String>> elist = new ArrayList<>();
+//
+//            while (resultSet.next()) {
+//                Map<String, String> event = new HashMap<>();
+//                event.put("eid", resultSet.getString("id")); // frontend uses eid, but actual column is id
+//                event.put("ename", resultSet.getString("name"));
+//                event.put("edescription", resultSet.getString("description"));
+//                event.put("edate", resultSet.getString("date"));
+//                event.put("eplace", resultSet.getString("place"));
+//                elist.add(event);
+//            }
+//
+//            resp.setContentType("application/json");
+//            ObjectMapper mapper = new ObjectMapper();
+//            mapper.writeValue(resp.getWriter(), elist);
+//
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
     @Override
@@ -143,4 +143,3 @@ public class DBCPServlet extends HttpServlet {
         }
     }
 }
-//add contact
